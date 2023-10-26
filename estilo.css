@@ -1,161 +1,251 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .homepage itens { /* menu sanduiche */
-    display: none;
-    text-align: center;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  body{
-    font-size: 16px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* a*/
-  }
-  
-  h2 {
-    padding: 1vw;
-    text-align: center;
-    font-size: 3ch;
-  }
-  
-  #descricao {
-    margin-top: 1vw;
-  }
-  
-  h1 {
-    background-color: #694646; /* a*/
-    color: #ffffff; /* a*/
-    text-align: center;
-    font-size: 6ch;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-  }
-  
-  
-  #itens ul { /* menu sanduiche */
-    padding: 0;
-  }
-  
-  #itens li a { /* menu sanduiche */
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s, text-decoration 0.3s;
-  }
-  
-  #itens li a:hover { /* menu sanduiche */
-    color: #333;
-    text-decoration: underline;
-  }
-  
-  ul { /* menu sanduiche */
-    list-style: none;
-  }
-  
-  /* css p telas maiores */
-  @media (max-width: 768px) {
-    #itens { /* menu sanduiche */
-      display: none;
-      background-color: #ffe5d6;
-      padding: 0.75em;
-      border-radius: 0.5em;
-    }
-  
-    #itens ul { /* menu sanduiche */
-      margin: 0;
-      padding: 0;
-    }
-  
-    #itens li { /* menu sanduiche */
-      margin-bottom: 0.5em;
-      list-style: none;
-    }
-  }
-  
-  menu { /* menu sanduiche */
+.homepage itens {
+  /* menu sanduiche */
+  display: none;
+  text-align: center;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* a*/
+}
+
+h2 {
+  padding: 1vw;
+  text-align: center;
+  font-size: 3ch;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+
+}
+*{
+  overflow-x: hidden;
+}
+
+#descricao {
+  margin-top: 1vw;
+}
+
+h1 {
+  background-color: #652e10;
+  /* a*/
+  color: #ffffff;
+  /* a*/
+  text-align: center;
+  font-size: 6ch;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+
+#itens ul {
+  /* menu sanduiche */
+  padding: 0;
+}
+
+#itens li a {
+  /* menu sanduiche */
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+#itens li a:hover {
+  /* menu sanduiche */
+  color: #333;
+  text-decoration: underline;
+}
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  /* menu sanduiche */
+  list-style: none;
+}
+
+/*fazendo*/
+p {
+  font-size: 2ch;
+  text-indent: 1vw;
+  margin-top: 1VW;
+  text-align: justify;
+}
+
+.image {
+  width: 100%;
+  /*Define a largura da imagem como 100% do container*/
+  margin-bottom: 20px;
+  /*Adiciona uma margem inferior de 20 pixels para criar um espaçamento entre as imagens*/
+}
+
+.text {
+  width: 100%;
+  /*Define a largura do elemento de texto como 100% do container*/
+}
+
+.left-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-content img {
+  max-width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+.right-content {
+  flex: 2;
+  padding: 20px;
+}
+
+
+
+.right-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.right-content li {
+  margin-bottom: 10px;
+}
+
+container {
+  display: flex;
+  margin: 50px;
+  background-color: rgb(206, 190, 189);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* css p telas maiores */
+@media (max-width: 768px) {
+  #itens {
+    /* menu sanduiche */
+    display: none;
     background-color: #ffe5d6;
     padding: 0.75em;
-    border-radius: 0.5rem;
-  }
-  
-  menu li { /* menu sanduiche */
-    margin-bottom: 0.25em;
+    border-radius: 0.5em;
   }
 
-  #itens li a { /* menu sanduiche */
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s, text-decoration 0.3s;
+  #itens ul {
+    /* menu sanduiche */
+    margin: 0;
+    padding: 0;
   }
-  
-  #itens li a:hover { /* menu sanduiche */
-    color: #333;
-    text-decoration: underline;
-  }
-  
-  ul { /* menu sanduiche */
+
+  #itens li {
+    /* menu sanduiche */
+    margin-bottom: 0.5em;
     list-style: none;
   }
+}
 
-  /* css p telas menores */
-  @media (max-width: 768px) {
-  
-    menu { /* menu sanduiche */
-      display: none;
-    }
-  
-  }
-  
-    span#burguer { /* menu sanduiche */
-      background-color: #91520b;
-      display: block;
-      color: #ffe5d6;
-      text-align: center;
-      padding: 1%;
-      cursor: pointer;
-    }
-  
-    span#burguer:hover { /* menu sanduiche */
-      background-color: #ffe5d6;
-      color: #91520b;
-    }
+menu {
+  /* menu sanduiche */
+  background-color: #ffe5d6;
+  padding: 0.75em;
+  border-radius: 0.5rem;
+}
 
-    ul {/*aaa*/
-        list-style: none; 
-        text-align: center;
-        padding: 0;
-      }
-      
-      #itens li {/*aaa*/
-        display: block;
-        margin: 10px auto;
-        padding: 0;
-        text-align: center;
-      }
-  
-  div{
-    text-align: justify;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 90vw;
-    min-width: 50vw;
-    box-sizing: border-box;
-    margin: 0 auto;
+menu li {
+  /* menu sanduiche */
+  margin-bottom: 0.25em;
+}
+
+#itens li a {
+  /* menu sanduiche */
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+#itens li a:hover {
+  /* menu sanduiche */
+  color: #333;
+  text-decoration: underline;
+}
+
+ul {
+  /* menu sanduiche */
+  list-style: none;
+}
+
+/* css p telas menores */
+@media (max-width: 768px) {
+
+  menu {
+    /* menu sanduiche */
+    display: none;
   }
-  
-  p {
-    font-size: 2ch;
-    text-indent: 1vw;
-    margin-top: 1VW;
-  }
-  
-  figure{
-    display: flex;
-    justify-content: center;
-  }
-  
-  figure img{
-    width: 90vw;
-  }
+
+}
+
+span#burguer {
+  /* menu sanduiche */
+  background-color: #91520b;
+  display: block;
+  color: #ffe5d6;
+  text-align: center;
+  padding: 1%;
+  cursor: pointer;
+}
+
+span#burguer:hover {
+  /* menu sanduiche */
+  background-color: #ffe5d6;
+  color: #91520b;
+}
+
+ul {
+  /*aaa*/
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+#itens li {
+  /*aaa*/
+  display: block;
+  margin: 10px auto;
+  padding: 0;
+  text-align: center;
+}
+
+div {
+  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 90vw;
+  min-width: 50vw;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 2ch;
+  text-indent: 1vw;
+  margin-top: 1VW;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+}
+
+figure img {
+  width: 90vw;
+}
